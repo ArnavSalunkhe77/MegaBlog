@@ -1,8 +1,9 @@
-import conf from '../Conf.js'
+import conf from './Config/Conf'
 import {Client , Account , ID} from 'appwrite'
 
 // this class is used to handle all the authentication related operations with appwrite backend .
 // iff tommorow we remove appwrite and use some ohter backend we can just change this these appwrite specific code in this class and rest of the application will remain same.
+export class AuthService {
     client = new Client();
     account;
 
